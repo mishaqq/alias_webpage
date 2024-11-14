@@ -1,11 +1,11 @@
 import React from "react";
-
+import Screenshot from "/assets/screenshot.png";
 export function PhoneMockup() {
   return (
     <div className="flex-1 relative">
       <div className="relative mx-auto w-[280px] h-[580px] bg-black rounded-[3rem] border-[14px] border-gray-800 shadow-2xl transform rotate-12">
         <img
-          src="assets/screenshot.png"
+          src={Screenshot}
           alt="Game Screenshot"
           className="h-full w-full object-cover rounded-[2rem]"
         />
