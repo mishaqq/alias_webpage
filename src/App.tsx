@@ -23,7 +23,7 @@ function App() {
   const [showAlert, setShowAlert] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#3468C0] font-sans">
+    <div className="min-h-screen bg-[#3468C0] font-sans overflow-x-hidden">
       {/* Hero Section */}
       <header className="container mx-auto px-4 pt-8 pb-20">
         <nav className="flex justify-between items-center py-6">
