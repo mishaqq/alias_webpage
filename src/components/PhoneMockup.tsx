@@ -11,7 +11,7 @@ export function PhoneMockup() {
         />
       </div>
       <div className="absolute -top-20 -right-20 w-72 h-72 bg-[#2a549a] rounded-full filter blur-3xl opacity-20"></div>
-      <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-[#2a549a] rounded-full filter blur-3xl opacity-40"></div>
+      <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-[#2a549a] rounded-full filter blur-3xl opacity-20"></div>
     </div>
   );
 }
