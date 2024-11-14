@@ -10,7 +10,9 @@ import {
 import { Button } from "./components/Button";
 import { FeatureCard } from "./components/FeatureCard";
 import { PhoneMockup } from "./components/PhoneMockup";
-import LogoIcon from "/assets/logo.png";
+import LogoIcon from "/assets/logov3.svg";
+import RedditIcon from "/assets/reddit.svg";
+import RedditEmbed from "./components/RedditEmbed";
 
 function App() {
   return (
@@ -19,11 +21,7 @@ function App() {
       <header className="container mx-auto px-4 pt-8 pb-20">
         <nav className="flex justify-between items-center py-6">
           <div className="flex items-center gap-2">
-            <img
-              src={LogoIcon}
-              alt="Custom Icon"
-              className="w-32 h-32 object-contain"
-            />
+            <img src={LogoIcon} alt="Custom Icon" className="w-12 h-12 " />
             {/* <span className="text-4xl font-bold text-white font-custom">
               Alias
             </span> */}
@@ -37,8 +35,8 @@ function App() {
 
         <section className="mt-20 flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight font-custom">
-              Аліас українською
+            <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight  tracking-wide">
+              Аліас Українською
               {/* Пояснюй та вгадуй слова з друзями */}
             </h1>
             <p className="text-white/80 text-xl mb-8 max-w-2xl">
@@ -96,6 +94,22 @@ function App() {
               title="Cross Platform"
               description="Play seamlessly across all your devices with cloud save functionality."
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-20 flex flex-col lg:flex-col items-center gap-6 pb-10 pt-10">
+        <div className="flex items-start gap-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight tracking-wide">
+            Обговорення з
+          </h2>
+          <img src={RedditIcon} alt="Custom Icon" className="w-12 h-12" />
+        </div>
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            <RedditEmbed url="https://www.reddit.com/r/Ukraine_UA/comments/1gptxuw/%D1%8F_%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA_%D1%96%D0%BD%D0%B4%D1%96_%D0%B3%D1%80%D0%B8_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E_%D0%BF%D0%BE%D1%82%D1%80%D1%96%D0%B1%D0%BD%D0%B0_%D0%B2%D0%B0%D1%88%D0%B0/" />
+            <RedditEmbed url="https://www.reddit.com/r/ukraine_dev/comments/1gptml4/%D1%8F_%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA_%D1%96%D0%BD%D0%B4%D1%96_%D0%B3%D1%80%D0%B8_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E_%D0%BF%D0%BE%D1%82%D1%80%D1%96%D0%B1%D0%BD%D0%B0_%D0%B2%D0%B0%D1%88%D0%B0/" />
+            <RedditEmbed url="https://www.reddit.com/r/reddit_ukr/comments/1gep2kn/%D1%8F_%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA_%D1%96%D0%BD%D0%B4%D1%96_%D0%B3%D1%80%D0%B8_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E_%D1%82%D1%80%D0%B5%D0%B1%D0%B0_%D0%B2%D0%B0%D1%88_%D1%84%D1%96%D0%B4%D0%B1%D0%B5%D0%BA/" />
           </div>
         </div>
       </section>
