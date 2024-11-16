@@ -28,7 +28,7 @@ function App() {
       <header className="container mx-auto px-4 pt-8 pb-20">
         <nav className="flex justify-between items-center py-6">
           <div className="flex items-center gap-2">
-            <img src={LogoIcon} alt="Custom Icon" className="w-12 h-12" />
+            <img src={LogoIcon} alt="Custom Icon" className="w-10 h-10" />
           </div>
           {/* Buttons moved to the left */}
           <div className="flex gap-2">
