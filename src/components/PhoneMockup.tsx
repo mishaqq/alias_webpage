@@ -1,5 +1,5 @@
 import React from "react";
-import Screenshot from "/assets/iphone15.png";
+import Screenshot from "/assets/iphone16.png";
 
 export function PhoneMockup({ className }: { className?: string }) {
   return (
