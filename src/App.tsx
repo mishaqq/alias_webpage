@@ -16,8 +16,6 @@ import { PhoneMockup } from "./components/PhoneMockup";
 import LogoIcon from "/assets/logov3.svg";
 import RedditIcon from "/assets/reddit.svg";
 import RedditEmbed from "./components/RedditEmbed";
-import AdditionalContentExample from "./components/Alert";
-import BuyMeACoffee from "./components/BuyMeACoffee";
 
 function App() {
   // State to control alert visibility
@@ -33,14 +31,6 @@ function App() {
           </div>
           {/* Buttons moved to the left */}
           <div className="flex gap-2">
-            <Button
-              icon={Instagram}
-              variant="link"
-              onClick={() => {
-                window.open("https://www.instagram.com/m1ka_qq/", "_blank");
-              }}
-              children={undefined}
-            />
             <Button
               icon={Github}
               variant="link"
@@ -67,7 +57,6 @@ function App() {
                 className="bg-black hover:bg-gray-900"
                 variant="store"
                 onClick={() => {
-                  setShowAlert(false);
                   setIOSAlert(true);
                 }}
               >
@@ -80,7 +69,11 @@ function App() {
                 className="bg-black hover:bg-gray-900"
                 variant="store"
                 onClick={() => {
-                  setShowAlert(true);
+                  window.open(
+                    "https://play.google.com/store/apps/details?id=com.mika.alias",
+                    "_blank"
+                  );
+
                   setIOSAlert(false);
                 }} // Show alert when clicked
               >
