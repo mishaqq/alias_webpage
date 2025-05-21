@@ -107,7 +107,7 @@ function App() {
 
               <span className="text-white/80">100+ Відгуків</span>
             </div>
-            <div className="mt-6">
+            <div className="mt-6 font-semibold transition-all flex items-center justify-center lg:justify-start gap-2">
               <a
                 href="https://www.buymeacoffee.com/mikaqq"
                 target="_blank"
@@ -119,10 +119,10 @@ function App() {
                   style={{ height: "60px", width: "217px" }}
                 />
               </a>
-              <p className="mt-6 text-white/80 text-xl mb-8 max-w-2xl">
-                Буду вдячний за підтримку щоб зарелізитись на iOS
-              </p>
             </div>
+            <p className="mt-6 text-white/80 text-xl mb-8 max-w-2xl">
+              Буду вдячний за підтримку щоб зарелізитись на iOS
+            </p>
           </div>
 
           <PhoneMockup />
